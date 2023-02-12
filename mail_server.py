@@ -134,6 +134,9 @@ def add_mail_route():
     """
     Summary: Adds a new mail entry to the json file
 
+    Args:
+        None
+
     Returns:
         str: The id of the new mail entry
     """
