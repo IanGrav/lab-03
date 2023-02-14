@@ -22,14 +22,14 @@ Question 3: What is one common REST Method not used in our mail server? How coul
 we extend our mail server to use this method?
 
 Answer for Question 3:
-One common REST method not used in our mail server is the PUT method, which would allow us to replace existing resources entirely, rather than for example DELETEing them and POSTing new ones. We could extend our mail server to use this method by defining a new function in the server to handle POST requests, which would use the provided email entry ID provided by the client (and parsed from the command line) to search for the correct email entry to replace (just like the frunction for DELETEing searches for the correct entry to delete), and then replace it with the information provided by the client (also parsed from the command line).
+One common REST method not used in our mail server is the PUT method, which would allow us to replace existing resources entirely, rather than for example DELETEing them and POSTing new ones. We could extend our mail server to use this method by defining a new function in the server to handle POST requests, which would use the provided email entry ID provided by the client (and parsed from the command line) to search for the correct email entry to replace (just like the function for DELETEing searches for the correct entry to delete), and then replace it with the information provided by the client (also parsed from the command line).
 
 
 Question 4: Why are API keys used for many RESTful APIs? What purpose do they
 serve? Make sure to cite any online resources you use to answer this question!
 
 Answer for Question 4:
-API keys are used for so many RESTful APIs to protect them from being accessed and/or abused by unauthorized users. API keys ensure that each user is authorized to be making requests of the server, and allow the server to track what users are making what requests. So basically, they are used as both a key and a tracking device for those accessing an API.
+API keys are used for so many RESTful APIs to protect them from being accessed and/or abused by unauthorized users. API keys ensure that each user is authorized to be making requests of the server, and allow the server to track what users are making what requests. So basically, they are used as both a key and a tracking device for the users/clients accessing an API.
 
 source:
 https://cloud.ibm.com/docs/account?topic=account-manapikey#:~:text=An%20application%20programming%20interface%20key,or%20abuse%20of%20the%20API.
