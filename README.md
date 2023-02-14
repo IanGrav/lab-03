@@ -22,7 +22,7 @@ Question 3: What is one common REST Method not used in our mail server? How coul
 we extend our mail server to use this method?
 
 Answer for Question 3:
-One common REST method not used in our mail server is the PUT method, which would allow us to replace existing resources entirely, rather than for example DELETEing them and POSTing new ones. We could extend our mail server to use this method by defining a new function in the server to handle POST requests, which would use the provided email entry ID provided by the client (and parsed from the command line) to search for the correct email entry to replace (just like the function for DELETEing searches for the correct entry to delete), and then replace it with the information provided by the client (also parsed from the command line).
+One common REST method not used in our mail server is the PUT method, which would allow us to replace existing resources entirely, rather than for example DELETEing them and POSTing new ones. We could extend our mail server to use this method by defining a new api route in the server to handle POST requests, which would call a new function we might call put_mail which would use the email entry ID provided by the client (and parsed from the command line) to search for the correct email entry to replace (just like the delete_mail function called in the route for DELETEing searches for the correct entry to delete and deletes it), and then replace it with the information provided by the client (also parsed from the command line).
 
 
 Question 4: Why are API keys used for many RESTful APIs? What purpose do they
