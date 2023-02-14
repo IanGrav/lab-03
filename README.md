@@ -15,7 +15,7 @@ One reason RESTful APIs are scalable is because they are "stateless" meaning tha
 Question 2: According to the definition of “resources” provided in the AWS article above, What are the resources the mail server is providing to clients?
 
 Answer for Question 2:
-The resources that the mail server is providing to the clients are the mail entries stored on the server, which hold the recipient, sender, subject, body, and ID of individual emails sent to and stored on the server.
+The resources that the mail server is providing to the clients are the mail entries stored on the server, which hold strings which represent the recipient, sender, subject, body, and ID of individual emails sent to and stored on the server.
 
 
 Question 3: What is one common REST Method not used in our mail server? How could
